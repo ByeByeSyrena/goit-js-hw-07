@@ -20,12 +20,6 @@ const liEls = galleryItems
 
     ulEl.insertAdjacentHTML("afterbegin", `${liEls}`);
 
-    ulEl.addEventListener("click", onClick);
-
-function onClick(event) {
-    event.preventDefault();
-};
-
 var lightbox = new SimpleLightbox('.gallery a', {
 captionsData: 'alt',
 captionDelay: 250,
